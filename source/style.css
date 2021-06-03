@@ -41,13 +41,17 @@
     height:80px;
     background-color: white;
     border-radius: 5px;
-    padding-top: 5px;
+    padding:5px;
+    padding-bottom: 20px;
     font-size: large;
     color: black;
     text-align: center;
     
 }
 
+#inputarea2{
+    font-size:xx-large;
+}
 
 
 #keywrappers{

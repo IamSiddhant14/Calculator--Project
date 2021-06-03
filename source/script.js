@@ -6,7 +6,8 @@ function clickednum(clicked_id){
 
     var num =document.getElementById(clicked_id).value;
     curr=curr.concat(num);
-    document.getElementsByTagName("p").innerHTML="curr";
+    console.log(curr);
+    document.getElementById('inputarea2').innerText=curr;
 
 }
 function clickedop(clicked_id){
@@ -14,26 +15,26 @@ function clickedop(clicked_id){
     var operator =document.getElementById(clicked_id).value;
     var emptyop=" ";
     curr=curr.concat(emptyop.concat(operator));
-    document.getElementsByTagName("p").innerHTML="curr";
+    document.getElementById("inputarea2").innerHTML=curr;
 
 }
 
 function clickedequal(clicked_id){
 
     var ans= eval(curr);
-    if (ans==err.message){
+    if (ans==NaN){
 
-        document.getElementsByTagName("p").innerHTML="ans";
+        document.getElementsByTagName("p").innerHTML=ans;
         return
     }
-    document.getElementsByTagName("p").innerHTML="ans";
+    document.getElementById("inputarea2").innerText=ans;
     curr=" ";
 }   
 
 function clickedac(clicked_id){
 
     curr=" ";
-    document.getElementsByTagName("p").innerHTML="clear";
+    document.getElementById("inputarea2").innerHTML=curr;
 
 }
 
@@ -43,7 +44,7 @@ function clickedpm(clicked_id){
 
     var minus="-"
        curr=minus.concat(curr);
-       document.getElementsByTagName("p").innerHTML="curr";
+       document.getElementById("inputarea2").innerText=curr;
        count=count-1;
 
    }
